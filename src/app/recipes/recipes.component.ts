@@ -9,21 +9,26 @@ import { RecipeService } from './recipe.service';
   providers: [RecipeService]
 })
 export class RecipesComponent implements OnInit {
-  currentSelectedRecipe: Recipe;
+  // COMMENTED BECAUSE WE ARE USING ROUTING FOR SELECTING THE RECIPE
+  // THROUGH THE ID. NO NEED OF SELECTEDRECIPE NOW.
+  // currentSelectedRecipe: Recipe;
 
-  constructor(private recipeService: RecipeService) { }
+  // constructor(private recipeService: RecipeService) { }
 
-  ngOnInit(): void {
-    this.recipeService.recipeSelected
-    .subscribe(
-      (recipe: Recipe) => {
-        this.currentSelectedRecipe = recipe;
-      }
-    );
+  // ngOnInit(): void {
+  //   this.recipeService.recipeSelected
+  //   .subscribe(
+  //     (recipe: Recipe) => {
+  //       this.currentSelectedRecipe = recipe;
+  //     }
+  //   );
+  // }
+
+  // getSelectedRecipe(recipe: Recipe) {
+  //   this.currentSelectedRecipe = recipe;
+  // }
+
+  ngOnInit() {
+
   }
-
-  getSelectedRecipe(recipe: Recipe) {
-    this.currentSelectedRecipe = recipe;
-  }
-
 }

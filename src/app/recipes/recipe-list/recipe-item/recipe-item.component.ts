@@ -28,16 +28,16 @@ export class RecipeItemComponent implements OnInit {
   //   this.router.navigate(['/recipes', this.route.snapshot.params['id']]);
   // }
 
-  getDashedName(name: string) {
-    let dashed: string = "";
-    for (let s of name) {
-      if (s !== " ") {
-        dashed += s.toLowerCase();
-      } else {
-        dashed += "-";
-      }
-    }
-    return dashed;
-  }
+  // getDashedName(name: string) {
+  //   let dashed: string = "";
+  //   for (let s of name) {
+  //     if (s !== " ") {
+  //       dashed += s.toLowerCase();
+  //     } else {
+  //       dashed += "-";
+  //     }
+  //   }
+  //   return dashed;
+  // }
 
 }
