@@ -5,9 +5,9 @@ import { Component, EventEmitter, Output } from "@angular/core";
   templateUrl:'./header.component.html'
 })
 export class HeaderComponent {
-  @Output() tabSelected = new EventEmitter<string>();
+  // @Output() tabSelected = new EventEmitter<string>();
 
-  onTabSelected(tabName: string) {
-    this.tabSelected.emit(tabName);
-  }
+  // onTabSelected(tabName: string) {
+  //   this.tabSelected.emit(tabName);
+  // }
 }
